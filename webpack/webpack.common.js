@@ -3,12 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-    index: './src/index.ts',
-    print: './src/print.ts',
+    index: path.resolve(__dirname, '../src/index.tsx'),
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Damen King',
+      title: 'Selects UI',
+      template: path.resolve(__dirname, '../src/index.html'),
     }),
   ],
   output: {
