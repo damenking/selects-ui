@@ -1,32 +1,5 @@
-// {
-//   "compilerOptions": {
-//     "target": "esnext",
-//     "moduleResolution": "node",
-//     "strict": true,
-//     "esModuleInterop": true,
-//     "jsx": "react",
-//     "typeRoots": [
-//       "./@types"
-//     ]
-//     "jsx": "react",
-//     "baseUrl": "./src",
-//     "types": [ "node" ],
-//     "paths": {
-//       // Why '../../libs'? These paths are relative to baseUrl
-//       "mercury-comps/*": ["ext-libs/mercury-comps/*"],
-//       "mercury-utils/*": ["../../libs/utils/src/*"],
-//       "mercury-react-utils/*": ["ext-libs/react-utils/*"],
-//       "redux-form/*": ["../../libs/types/@types/redux-form/*"]
-//     },
-//     "noEmit": true,
-//     "noImplicitAny": false,
-//     "module": "esnext"
-//   }
-// }
-
 {
   "compilerOptions": {
-    "outDir": "./dist/",
     "noImplicitAny": true,
     "module": "esnext",
     "target": "esnext",
@@ -36,5 +9,5 @@
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
   },
-  // "include": ["src", "index.d.ts"]
+  "include": ["src"]
 }
